@@ -24,8 +24,8 @@
 -e XAUTHORITY=$XAUTH abc50111/opencv:4.2.0_gui-complete 
 ***1.remember to mounted the volumes***
 ***2.if you are using "OpenCV:4.2.0-gui-face_rec-cuda"***
-***- install nvidia-container-runtime(https://github.com/NVIDIA/nvidia-container-runtime)***
-***- remember to add --gpus all --runtime=nvidia***
+***2-1 install nvidia-container-runtime(https://github.com/NVIDIA/nvidia-container-runtime)***
+***2-2 remember to add --gpus all --runtime=nvidia***
 
 $ xhost -local:docker ***(Revoke Authority)***
 
