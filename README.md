@@ -29,7 +29,7 @@
 - $ xhost -local:docker ***(Revoke Authority)***
 
 ### 2.run the  	docker_run-set_env_gui_faceRec_cuda|docker_run-set_env_gui
-- https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui-face_rec-cuda
+- https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui
 - https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui-face_rec-cuda
 ***remember to change the mounted directory : -v /home/ywt01/Desktop/CVtoDocker:/home***
 
