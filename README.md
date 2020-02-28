@@ -1,14 +1,7 @@
-# opencv_dockerfile
+# this repository include two container:
+## 1.OpenCV:4.2.0
+### 
 
-## Get docker images:
-### **There are two ways** 
-### 1. docker pull abc50111/opencv:tag name
-- https://hub.docker.com/repository/docker/abc50111/opencv
-### 2. run the Dockerfile
-#### 1.OpenCV:4.2.0-gui
-- https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui
-#### 2.OpenCV:4.2.0-gui-face_rec-cuda
-- https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui-face_rec-cuda
 ## Set enviroment and docker run image,there are two ways: 
 ### **There are two ways** 
 ### 1. input the following code in terminal
@@ -33,3 +26,13 @@
 - https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui-face_rec-cuda
 ***remember to change the mounted directory : -v /home/ywt01/Desktop/CVtoDocker:/home***
 
+
+## Get docker images:
+### **There are two ways** 
+### 1. docker pull abc50111/opencv:tag name
+- https://hub.docker.com/repository/docker/abc50111/opencv
+### 2. run the Dockerfile
+#### 1.OpenCV:4.2.0
+- https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui
+#### 2.OpenCV:4.2.0-gui-face_rec-cuda
+- https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui-face_rec-cuda
