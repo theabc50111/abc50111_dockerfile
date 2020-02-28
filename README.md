@@ -1,9 +1,21 @@
-# this repository include two container:
-## 1.OpenCV:4.2.0
-### 
+# 1.This repository include two images:
+- ## OpenCV:4.2.0
+  - include OpenCV4.2.0 with customized settings by compiled by my self
 
-## Set enviroment and docker run image,there are two ways: 
-### **There are two ways** 
+- ## OpenCV:4.2.0-dlib-face_rec-cuda
+  - include OpenCV4.2.0 with customized settings by compiled by my self
+  - include objective dlib
+  - include face-recognition(***python package***) which can be execuated by CUDA
+
+- ### There are two ways to get docker images: 
+  #### 1. pull image from dockerhub
+  - https://hub.docker.com/repository/docker/abc50111/opencv
+  #### 2. build the image by Dockerfile
+  - OpenCV:4.2.0 => https://github.com/theabc50111/opencv_dockerfile/blob/master/opencv:4.2.0/Dockerfile
+  - OpenCV:4.2.0-dlib-face_rec-cuda =>https://github.com/theabc50111/opencv_dockerfile/blob/master/opencv:4.2.0-dlib-face_rec-cuda/Dockerfile
+
+# 2.Set enviroment and docker run image,there are two ways: 
+## **There are two ways** 
 ### 1. input the following code in terminal
 - $ xhost +local:docker
 
@@ -27,12 +39,4 @@
 ***remember to change the mounted directory : -v /home/ywt01/Desktop/CVtoDocker:/home***
 
 
-## Get docker images:
-### **There are two ways** 
-### 1. docker pull abc50111/opencv:tag name
-- https://hub.docker.com/repository/docker/abc50111/opencv
-### 2. run the Dockerfile
-#### 1.OpenCV:4.2.0
-- https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui
-#### 2.OpenCV:4.2.0-gui-face_rec-cuda
-- https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui-face_rec-cuda
+
