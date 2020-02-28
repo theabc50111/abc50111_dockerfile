@@ -33,11 +33,11 @@
     xhost +local:root 
     docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" abc50111/opencv:tag command #(choose the image tag and command you need)
     ```
-    #### Using the second way , you can't assaign a ip to your container, because it share the same ip with host 
-  - ### ***if you are using "OpenCV:4.2.0-dlib-face_rec-cuda"***<br>
+    ##### Using the second way , you can't assaign a ip to your container, because it share the same ip with host 
+  - ### *if you are using "OpenCV:4.2.0-dlib-face_rec-cuda"*
     - ***install nvidia-container-runtime(https://github.com/NVIDIA/nvidia-container-runtime)***<br>
     - ***remember to add --gpus all in docker run command***
-  - ### set enviromen example :　(*it's an exectable file, execute it will automatically create container*)
+  - ### *set enviroment example :　(it's an exectable file, execute it will automatically create container)*
     - OpenCV:4.2.0
       - https://github.com/theabc50111/opencv_dockerfile/blob/master/opencv:4.2.0/4.2.0_docker_run-set_env
     - OpenCV:4.2.0-dlib-face_rec-cuda
