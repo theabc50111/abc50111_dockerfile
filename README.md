@@ -18,7 +18,7 @@
 
 # 2.There are two ways to set enviroment and create container: 
   - ## 1. input the following code in terminal
-    ` $ xhost +local:docker
+    ` $ xhost +local:docker<br>
      $ XSOCK=/tmp/.X11-unix
      $ XAUTH=/tmp/.docker.xauth
      $ xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
