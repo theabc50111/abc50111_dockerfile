@@ -17,16 +17,16 @@
 
 
 # 2.There are two ways to set enviroment and create container: 
-    ## 1. input the following code in terminal
-    - $ xhost +local:docker
-    - $ XSOCK=/tmp/.X11-unix
-    - $ XAUTH=/tmp/.docker.xauth
-    - $ xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
-    - $ sudo docker run -it --device=/dev/video0　-e DISPLAY=$DISPLAY --env QT_X11_NO_MITSHM=1 -v $XSOCK:$XSOCK -v $XAUTH:$XAUTH -e XAUTHORITY=$XAUTH abc50111/opencv:tag(*choose what you need*) command<br>
-    - $ xhost -local:docker ***(Revoke Authority)***
-    ## 2. input the following code in terminal
-    - xhost +local:root 
-    - docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" abc50111/opencv:tag command
+  - ## 1. input the following code in terminal
+    ` $ xhost +local:docker
+    ` $ XSOCK=/tmp/.X11-unix
+    ` $ XAUTH=/tmp/.docker.xauth
+    ` $ xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
+    ` $ sudo docker run -it --device=/dev/video0　-e DISPLAY=$DISPLAY --env QT_X11_NO_MITSHM=1 -v $XSOCK:$XSOCK -v $XAUTH:$XAUTH -e XAUTHORITY=$XAUTH abc50111/opencv:tag(*choose what you need*) command
+    ` $ xhost -local:docker ***(Revoke Authority)***
+  - ## 2. input the following code in terminal
+    `- xhost +local:root 
+    `- docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" abc50111/opencv:tag command
 
   - ### ***if you are using "OpenCV:4.2.0-dlib-face_rec-cuda"***<br>
     - ***install nvidia-container-runtime(https://github.com/NVIDIA/nvidia-container-runtime)***<br>
