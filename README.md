@@ -6,7 +6,7 @@
   - include OpenCV4.2.0 with customized settings by compiled by my self
   - include objective dlib
   - include face-recognition(***python package***) which can be execuated by CUDA
-##### before using OpenCV:4.2.0-dlib-face_rec-cuda,***remember install nvidia-container-runtime(https://github.com/NVIDIA/nvidia-container-runtime)***
+  ##### before using OpenCV:4.2.0-dlib-face_rec-cuda,***remember install nvidia-container-runtime(https://github.com/NVIDIA/nvidia-container-runtime)***
 
 - ### There are two ways to get docker images: 
   #### 1. pull image from dockerhub
@@ -28,13 +28,12 @@
      - ***1.remember to mounted the volumes***<br>
      - ***2.if you are using "OpenCV:4.2.0-dlib-face_rec-cuda"***<br>
         - ***install nvidia-container-runtime(https://github.com/NVIDIA/nvidia-container-runtime)***<br>
-        - ***remember to add --gpus all in docker run***
+        - ***remember to add --gpus all in docker run command***
   - $ xhost -local:docker ***(Revoke Authority)***
-
-## 2.run the  	docker_run-set_env_gui_faceRec_cuda|docker_run-set_env_gui
-- https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui
-- https://github.com/theabc50111/opencv_dockerfile/tree/master/opencv:4.2.0-gui-face_rec-cuda
-***remember to change the mounted directory : -v /home/ywt01/Desktop/CVtoDocker:/home***
+    #### example
+    - https://github.com/theabc50111/opencv_dockerfile/blob/master/opencv:4.2.0/4.2.0_docker_run-set_env
+    - https://github.com/theabc50111/opencv_dockerfile/blob/master/opencv:4.2.0-dlib-face_rec-cuda/4.2.0-dlib-face_rec-cuda_docker_run-set_env
+    - ***remember to change the mounted directory : -v /home/ywt01/Desktop/CVtoDocker:/home***
 
 
 
