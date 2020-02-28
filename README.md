@@ -22,11 +22,11 @@
   - $ XAUTH=/tmp/.docker.xauth
   - $ xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
   - $ sudo docker run -it --device=/dev/video0　-e DISPLAY=$DISPLAY --env QT_X11_NO_MITSHM=1\ -v $XSOCK:$XSOCK -v $XAUTH:$XAUTH\ 
-  -e XAUTHORITY=$XAUTH abc50111/opencv:4.2.0-dlib-face_rec-cuda <br>
-  ***1.remember to mounted the volumes***<br>
-  ***2.if you are using "OpenCV:4.2.0-dlib-face_rec-cuda"***<br>
-  ***- install nvidia-container-runtime(https://github.com/NVIDIA/nvidia-container-runtime)***<br>
-  ***- remember to add --gpus all --runtime=nvidia***
+  -e XAUTHORITY=$XAUTH abc50111/opencv:tag(*choose what you need*) <br>
+      ***1.remember to mounted the volumes***<br>
+      ***2.if you are using "OpenCV:4.2.0-dlib-face_rec-cuda"***<br>
+      - ***install nvidia-container-runtime(https://github.com/NVIDIA/nvidia-container-runtime)***<br>
+      - ***remember to add --gpus all in docker run***
   - $ xhost -local:docker ***(Revoke Authority)***
 
 ### 2.run the  	docker_run-set_env_gui_faceRec_cuda|docker_run-set_env_gui
