@@ -10,7 +10,7 @@
 
 - ### There are two ways to get docker images: 
   #### 1. pull image from dockerhub
-  - https://hub.docker.com/repository/docker/abc50111/opencv
+  - https://hub.docker.com/r/abc50111/opencv
   #### 2. build the image by Dockerfile
   - OpenCV:4.2.0 => https://github.com/theabc50111/opencv_dockerfile/blob/master/opencv:4.2.0/Dockerfile
   - OpenCV:4.2.0-dlib-face_rec-cuda =>https://github.com/theabc50111/opencv_dockerfile/blob/master/opencv:4.2.0-dlib-face_rec-cuda/Dockerfile
