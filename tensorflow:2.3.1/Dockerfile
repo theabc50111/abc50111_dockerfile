@@ -1,7 +1,7 @@
 From tensorflow/tensorflow:2.3.1-jupyter
 LABEL maintainer="theabc50111@gmail.com"
 
-RUN pip3 install jupyterthemes; \
+RUN pip3 install jupyterthemes pandas scikit-learn; \
 jt -t onedork -T -N -kl -fs 16 -tfs 16 -ofs 14 \
 -mathfs 100 -dfs 14 -nfs 14 -cellw 90% -lineh 170; \
 rm -rf /tf/tensorflow-tutorials; \
