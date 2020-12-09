@@ -2,6 +2,8 @@
 
 - ## tensorflow:2.3.1 include:
   - jupyter notebook with customized settings by compiled by my self
+  - pandas
+  - scikit-learn
 
 - ## OpenCV:4.2.0
   - include OpenCV4.2.0 with customized settings by compiled by my self
