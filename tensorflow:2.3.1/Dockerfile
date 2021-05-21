@@ -27,5 +27,10 @@ echo "# use ggplot as style of picture\
 jupyter notebook --generate-config; \
 echo "c.NotebookApp.ip = '*'\
 \nc.NotebookApp.open_browser = False\
-\nc.NotebookApp.allow_root = True">>/root/.jupyter/jupyter_notebook_config.py
+\nc.NotebookApp.allow_root = True">>/root/.jupyter/jupyter_notebook_config.py; \
+mkdir -p $(jupyter --data-dir)/nbextensions; \
+cd $(jupyter --data-dir)/nbextensions; \
+git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding; \
+jupyter nbextension enable vim_binding/vim_binding
+
 CMD jupyter notebook
